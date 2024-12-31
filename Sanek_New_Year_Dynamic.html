@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление для Санька</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?olivier') no-repeat center/cover;
+            padding: 50px;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .layers {
+            margin: 50px 0;
+        }
+        .layer {
+            font-size: 2em;
+            margin: 10px 0;
+            transition: opacity 0.5s ease;
+        }
+        .cta-button {
+            background-color: #ffc107;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #e0a800;
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>С Новым годом, Санёк!</h1>
+        <p id="main-message">Пусть твоя жизнь будет как оливье!</p>
+    </div>
+    <div class="layers" id="wishes-container">
+        <div class="layer" id="wish-1">Насыщенной</div>
+        <div class="layer" id="wish-2">Многослойной</div>
+        <div class="layer" id="wish-3">И без просрочки!</div>
+    </div>
+    <button class="cta-button" onclick="changeWishes()">Сделать пожелания теплее!</button>
+    <footer>
+        Сделано с теплом специально для Санька 🎉 2025 год
+    </footer>
+    <script>
+        function changeWishes() {
+            document.getElementById('wish-1').innerText = 'Полной радости';
+            document.getElementById('wish-2').innerText = 'Сладкой, как победа';
+            document.getElementById('wish-3').innerText = 'И согревающей душу!';
+            document.getElementById('main-message').innerText = 'Живи счастливо и ярко!';
+        }
+    </script>
+</body>
+</html>
